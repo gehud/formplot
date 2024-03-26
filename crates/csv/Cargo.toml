@@ -1,0 +1,8 @@
+[package]
+name = "formplot_csv"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+formplot_core = { path = "../core" }
+csv = "1.3.0"

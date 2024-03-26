@@ -1,0 +1,14 @@
+[package]
+name = "formplot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+formplot_core = { path = "crates/core" }
+formplot_csv = { path = "crates/csv", optional = true }
+
+[workspace]
+members = ["crates/*", "testbed"]
+
+[features]
+csv = ["dep:formplot_csv"]
